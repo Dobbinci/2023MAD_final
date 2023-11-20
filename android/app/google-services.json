@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "514278395928",
+    "project_id": "mad-final2",
+    "storage_bucket": "mad-final2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514278395928:android:1657ad4d275462518d336d",
+        "android_client_info": {
+          "package_name": "com.example.shrine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514278395928-7vbeo7ge7gshd3unmljq84bh9gk26l4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkUPonzlrn2GDJIM4PkUxy72AMGYI-h4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514278395928-7vbeo7ge7gshd3unmljq84bh9gk26l4t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "514278395928-9i3o7358m23uv0nhphdmqu0icn1b1c23.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mdc100Series"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
