@@ -58,9 +58,7 @@ class _HomePageState extends State<HomePage> {
       var user = findUserById(FirebaseAuth.instance.currentUser!.uid, users);
       return Card(
         clipBehavior: Clip.antiAlias,
-        // TODO: Adjust card heights (103)
         child: Column(
-          // TODO: Center items on the card (103)
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Stack(
@@ -148,7 +146,7 @@ class _HomePageState extends State<HomePage> {
               );
             },
           ),
-          title: const Text('SHRINE'),
+          title: const Text('Home'),
           actions: <Widget>[
             IconButton(
               icon: const Icon(

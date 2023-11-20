@@ -125,7 +125,7 @@ class _AddPageState extends State<AddPage> {
         SizedBox(height: 6.0),
         IconButton(
             onPressed: () => getImage(ImageSource.gallery),
-            icon: const Icon(Icons.camera)),
+            icon: const Icon(Icons.camera_alt)),
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Form(

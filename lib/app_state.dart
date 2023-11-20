@@ -16,7 +16,7 @@ class AppState extends ChangeNotifier {
     _dropdownValue = dropdownValue;
     FirebaseFirestore.instance
         .collection('product')
-        .orderBy('price', descending: dropdownValue)
+        .orderBy('price', descending: _dropdownValue)
         .snapshots()
         .listen((event) {
       _productContents = event.docs.map((doc) {
@@ -29,9 +29,9 @@ class AppState extends ChangeNotifier {
             imageUrl: doc.data()['image_url'],
             whoLikes: doc.data()['who_likes'],
             createdTime:
-            (doc.data()['created_time'] as Timestamp).toDate().toString(),
+            (doc.data()['created_time'] as Timestamp?)?.toDate().toString() ?? DateTime.now().toString(),
             modifiedTime:
-            (doc.data()['modified_time'] as Timestamp).toDate().toString(),
+            (doc.data()['modified_time'] as Timestamp?)?.toDate().toString() ?? DateTime.now().toString(),
             userId: doc.data()['user_id']);
       }).toList();
       notifyListeners();
@@ -46,7 +46,7 @@ class AppState extends ChangeNotifier {
     //load product
     FirebaseFirestore.instance
         .collection('product')
-        .orderBy('price', descending: dropdownValue)
+        .orderBy('price', descending: _dropdownValue)
         .snapshots()
         .listen((event) {
       _productContents = event.docs.map((doc) {
